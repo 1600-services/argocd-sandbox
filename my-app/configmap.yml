@@ -5,5 +5,5 @@ metadata:
   name: my-config
 data:
   TITLE: "Crud-K8s-HELM"
-  HOSTDB: "mysql-svc.pro.svc.cluster.local"
+  HOSTDB: "mysql-svc.prod.svc.cluster.local"
   PORTDB: "3306"
