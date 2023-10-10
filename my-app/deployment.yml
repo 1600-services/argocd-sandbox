@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
         - name: crud
-          image: devops1600/crud-node:v0.8
+          image: devops1600/crud-node:v0.10
+          command: ["./start.sh"]
           ports:
             - containerPort: 3000
           env:
@@ -34,12 +35,12 @@ spec:
                 configMapKeyRef:
                   name: my-config
                   key: PORTDB
-            - name: USER_DB
+            - name: USERDB
               valueFrom:
                 secretKeyRef:
                   name: crud-db-secret
                   key: username
-            - name: PASSWORD_DB
+            - name: PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: crud-db-secret
