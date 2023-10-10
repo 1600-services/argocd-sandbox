@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: devops1600/crud-mysql:v0.1
+          image: devops1600/crud-mysql:v0.2
           ports:
           - containerPort: 3306 
