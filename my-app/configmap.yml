@@ -4,6 +4,6 @@ metadata:
   namespace: prod
   name: my-config
 data:
-  TITLE: "Crud-K8s-HELM-argoCD"
+  TITLE: "Crud-K8s-HELM-argoCD"  
   HOSTDB: "mysql-svc.prod.svc.cluster.local"
   PORTDB: "3306"
