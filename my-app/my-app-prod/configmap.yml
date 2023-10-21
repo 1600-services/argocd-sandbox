@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: prod
+  name: my-config
+data:
+  TITLE: "Crud-K8s-HELM-argoCD-Prod"  
+  HOSTDB: "mysql-svc.prod.svc.cluster.local"
+  PORTDB: "3306"
