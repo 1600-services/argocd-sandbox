@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crud
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: crud
+          image: devops1600/crud-node:v0.10
+          command: ["./start.sh"]
+          ports:
+            - containerPort: 3000
+          env:
+            - name: TITLE
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: TITLE
+            - name: HOSTDB
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: HOSTDB
+            - name: PORTDB
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: PORTDB
+            - name: USERDB
+              valueFrom:
+                secretKeyRef:
+                  name: crud-db-secret
+                  key: username
+            - name: PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: crud-db-secret
+                  key: password 
