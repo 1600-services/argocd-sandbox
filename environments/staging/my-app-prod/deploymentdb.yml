@@ -17,4 +17,11 @@ spec:
         - name: mysql
           image: devops1600/crud-mysql:v0.1
           ports:
-          - containerPort: 3306 
+          - containerPort: 3306
+          resources:
+            limits:
+              memory: "256Mi"  
+              cpu: "500m"      
+          livenessProbe:
+            tcpSocket:
+              port: 3306

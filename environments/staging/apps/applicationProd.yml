@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/1600-services/argocd-sandbox.git
     targetRevision: HEAD
-    path: enviroments/staging/my-app
+    path: environments/staging/my-app-prod
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
