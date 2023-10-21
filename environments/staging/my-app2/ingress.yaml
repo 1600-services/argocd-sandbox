@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: crud.1600.local
+  - host: crud.1600.local.dev
     http:
       paths:
       - path: /
