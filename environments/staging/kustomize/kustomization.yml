@@ -1,5 +1,5 @@
 ---
-namespace: test
+namespace: default
 images:
   - name: devops1600/crud-node
     newTag: v0.10.0
