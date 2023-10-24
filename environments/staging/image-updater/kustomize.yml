@@ -1,9 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespaces: test
-images:
-  - name: devops1600/crud-node
-    newTag: v0.10.0
+metadata:
+  name: arbitrary
 resources:
   - deployment.yml
 

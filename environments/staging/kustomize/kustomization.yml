@@ -1,0 +1,7 @@
+---
+namespace: test
+images:
+  - name: devops1600/crud-node
+    newTag: v0.10.0
+resources:
+  - ../image-updater
