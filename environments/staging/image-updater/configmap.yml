@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  namespace: default
+  namespace: test
   name: my-config
 data:
   TITLE: "Crud-K8s-HELM"
-  HOSTDB: "mysql-svc.deafult.svc.cluster.local"
+  HOSTDB: "mysql-svc.test.svc.cluster.local"
   PORTDB: "3306"
