@@ -2,7 +2,7 @@ apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: crud-pdb
-  namespace: test
+  namespace: local
 spec:
   minAvailable: 2
   selector:
