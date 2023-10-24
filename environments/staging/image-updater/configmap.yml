@@ -4,6 +4,6 @@ metadata:
   namespace: test
   name: my-config 
 data:
-  TITLE: "Crud-K8s-HELM-imageUpdater"
+  TITLE: "Crud-K8s-HELM-test"
   HOSTDB: "mysql-svc.test.svc.cluster.local"
   PORTDB: "3306"
