@@ -7,4 +7,7 @@ resources:
   - deployment.yml
   - configmap.yml
   - ingress.yml
-
+  - pbd.yml
+  - deploymentdb.yml
+  - sealed-secret.yml
+  - service.yml
